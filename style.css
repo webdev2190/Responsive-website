@@ -1,0 +1,318 @@
+/* Css Reset */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* css Variables */
+
+/* :root{
+    --navbar-height: 59px;
+} */
+
+/* Navigation bar */
+
+#navbar{
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 0px;
+}
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index:-1;
+    opacity: 10;
+}
+
+/* Navigation bar: Logo and Image */
+#logo{
+    margin: 10px 34px;
+}
+#logo img{
+    height: 60px;
+    margin: 3px 3px;
+}
+#logo img:hover{
+    cursor: pointer;
+}
+
+/* Navigation bar: List Styling */
+#navbar ul{
+    display: flex;
+    font-family: 'Baloo Bhaina 2', cursive;
+}
+#navbar ul li{
+    list-style: none;
+    font-size: 22px; 
+}
+#navbar ul a{
+    display: block;
+    text-decoration: none;
+    padding: 3px 14px;
+    border-radius: 20px;
+    color: #FC8D2C;
+    text-shadow: 3px 2px 4px rgb(46, 46, 46);
+}
+#navbar ul li a:hover{
+    cursor: pointer;
+    color:white;
+    border: 2px solid white;
+    border-radius: 50px;
+    text-shadow: 3px 2px 4px rgb(33, 32, 32);
+}
+
+/* Home Section */
+
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 550px;
+    justify-content: center;
+    align-items: center;
+}
+#home::before{
+    content: "";
+    background:url(./bg7.jpg) no-repeat center center/cover;
+    height: 776px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 642px;
+    width: 100%;
+    z-index:-1;
+    opacity: 0.90;
+}
+#home h1{
+    color: white;
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+}
+#home p{
+    color: white;
+    text-align: center;
+    font-size: 1.3rem;
+    font-family: 'Bree Serif', serif;
+}
+
+/* Services Section */
+#services{
+  margin: 25px;
+  display: flex;
+  /* font-size: 40px;  */
+  /* text-shadow: 1px 1px 4px rgb(102, 102, 102);  */
+}
+.h-primary{
+    /* text-shadow: 1.5px 1.5px 3px rgb(77, 76, 76); */
+    font-family: 'Bree Serif', serif;
+
+}
+
+#services .h-secondary{
+    font-size: 28px;
+    font-family: 'Bree Serif', serif;
+}
+
+#services .box{
+    /* border: 2px solid yellowgreen; */
+    padding: 8px;
+    margin: 7px;
+    height: 380px;
+    border-radius: 22px;
+    background:rgb(252, 252, 252);
+    box-shadow: 0 14px 28px rgba(0,0,0,0.15), 
+    0 10px 10px rgba(0,0,0,0.10);
+
+}
+
+#services .box:hover{
+    /* transform: perspective(800px) rotate(365deg); */
+    cursor:pointer;
+    padding: 6px;
+    margin: 8px;
+    border-radius: 22px;
+    background:whitesmoke;
+    box-shadow: 2px 2px 4px 3px rgb(153, 153, 153);
+
+}
+#services .box img{
+    height: 160px;
+    margin: auto;
+    display: block;
+}
+#services{
+
+}
+#services .box p{
+    font-family: 'Bree Serif', serif;
+}
+#services{
+
+}
+
+/* Clients Section */
+#client-section{
+    height: 276px;
+    position: relative;
+}
+#client-section::before{
+    content:"";
+    position:absolute;
+    background: url('./img/') no-repeat center center/cover;
+    width: 100%;
+    height: 99%;
+    z-index: -1;
+    opacity: 0.7;
+}
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#clients img{
+   height: 80px;
+}
+.client-item{
+    padding: 30px;
+}
+
+
+/* Contact Section */
+#contact{
+    position: relative;
+    
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.6;
+    background:url('./bg2.jpg') no-repeat center center/cover;
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+    border-radius: 10px;
+}
+
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 12px;
+    border: none;
+    font-size: 1.1rem;
+}
+#contact-box form{
+    width: 40%;
+}
+
+#contact-box label{
+    font-size: 1.6rem;
+    font-family: 'Bree Serif', serif;
+}
+
+
+button {
+	border-radius: 50px;
+	border:4px solid black;
+	color: black;
+	font-size: 12px;
+	font-weight: bold;
+	padding: 12px 45px;
+    margin-top: 13px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	transition: transform 80ms ease-in;
+}
+button:hover{
+    cursor: pointer;
+    border-radius: 50px;
+	border:4px solid #FF4B2B;
+	color: #FF4B2B;
+	font-size: 12px;
+	font-weight: bold;
+	padding: 12px 45px;
+    margin-top: 13px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+}
+
+button:active {
+	transform: scale(0.95);
+}
+
+button:focus {
+	outline: none;
+}
+
+button.ghost {
+	background-color: transparent;
+	border-color: black;
+} 
+button.ghost:hover{
+	background-color: transparent;
+	border-color: #FF4B2B;
+}
+
+
+footer{
+    background: linear-gradient(to right, #FC8D2C, #fff679);
+    color: black;
+    padding: 9px 20px;
+}
+
+
+/* Utility Classes */
+.h-primary{
+    font-family: 'Bree Serif', serif;
+    font-size: 2.8rem;
+    padding: 14px;
+    
+}
+
+.h-secondary{
+    font-family: 'Bree Serif', serif;
+    font-size: 2.3rem;
+    padding: 12px;
+    /* text-shadow: 3px 3px 4px rgb(26, 26, 26); */
+}
+
+.btn{
+    margin: 17px;
+    padding: 5px 20px;
+    border: 2px solid #FC8D2C;
+    background: transparent;
+    border-radius: 50px;
+    color: #FC8D2C;
+    font-size: 1.5rem;
+    font-family: 'Baloo Bhaina 2', cursive;
+    text-transform: uppercase;
+    transition: transform 80ms ease-in;
+    
+}
+.btn:hover{
+    margin: 17px;
+    padding: 5px 20px;
+    border: 2px solid #fff;
+    background: transparent;
+    border-radius: 50px;
+    color: #fff;
+    font-size: 1.5rem;
+    font-family: 'Baloo Bhaina 2', cursive;
+    text-transform: uppercase;
+}
+.center{
+    text-align: center;
+}
